@@ -1,0 +1,16 @@
+  
+<h1><%=@task.title %></h1>
+
+<p>
+  <%= @task.details %>
+</p>
+
+<%# The three below are the same thing %>
+<%# <a href="/restaurants">Back</a> %>
+<%# <%= link_to 'Back', "/restaurants" %>
+<%= link_to 'Back', tasks_path%>
+
+<%= link_to 'Edit', task_edit_path%>
+
+<%# link_to is a RailsHelper %>
+<%# A RailsHelper is a method that builds HTML for us %>
